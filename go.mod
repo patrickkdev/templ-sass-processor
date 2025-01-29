@@ -1,4 +1,4 @@
-module html-style-tags-css-extractor
+module templ-style-parser
 
 go 1.23.5
 
