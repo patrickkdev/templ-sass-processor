@@ -1,4 +1,4 @@
-module templ-style-parser
+module github.com/patrickkdev/templ-style-parser
 
 go 1.23.5
 
