@@ -7,7 +7,7 @@
 ## Why I made this
 
 I made this simple tool because I got addicted to writing [Nested CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting). 
-Later I realized that this only works in modern browsers, and looks completely broken on older browsers.
+Later I realized that this only works in modern browsers, and looks completely broken on older ones.
 
 I didn’t want to rewrite dozens of rules by hand so instead, I discovered I could run my CSS through the Sass CLI. So I built a tiny Go utility that targets the <style> tags inside .templ files.
 
