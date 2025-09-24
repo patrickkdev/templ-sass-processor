@@ -1,6 +1,6 @@
 # templ-sass-processor
 
-**Short description:** A Go tool that recursively finds `.templ` files in your project, and processes CSS code inside `<style>` blocks using the Sass CLI. It replaces the processed parts while keeping the rest of the code unchanged.
+**Short description:** A Go tool that recursively finds `.templ` files in your project, and processes CSS code inside `<style>` blocks using the [Sass CLI](https://sass-lang.com/). It replaces the processed parts while keeping the rest of the code unchanged.
 
 ---
 
