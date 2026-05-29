@@ -20,7 +20,7 @@ I ended up putting together this small utility that:
 
 ## Why use it
 
-* Write nested, modern CSS inside your Templ components and ship flat CSS that works in browsers without native nesting support.
+* Flatten nested CSS inside your Templ components while preserving surrounding markup unchanged.
 
 ## Requirements
 
