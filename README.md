@@ -1,15 +1,16 @@
 # templ-sass-processor
 
-**Short description:** A Go tool that recursively finds `.templ` files in your project, and processes CSS code inside `<style>` blocks using the [Sass CLI](https://sass-lang.com/). It replaces the processed parts while keeping the rest of the code unchanged.
+I made this simple tool because I was building a web app, and using [Nested CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) inside <style> tags for styling.
+Later I realized that nested CSS only works in modern browsers, and looks completely broken on older ones.
 
----
+I didn’t want to rewrite all the css by hand so instead, I discovered I could flatten the CSS by running it through something like the Sass CLI. The problem is that the CSS lives inside .templ files, so you can’t just pipe the whole file through Sass.
 
-## Why I made this
+I ended up putting together this small utility that:
 
-I made this simple tool because I got addicted to writing [Nested CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting). 
-Later I realized that this only works in modern browsers, and looks completely broken on older ones.
-
-I didn’t want to rewrite dozens of rules by hand so instead, I discovered I could run my CSS through the Sass CLI. So I built a tiny Go utility that targets the <style> tags inside .templ files.
+* recursively finds .templ files
+* extracts CSS inside <style> blocks
+* runs it through the Sass CLI
+* writes the processed CSS back in place without touching the rest of the file
 
 ## Features
 
