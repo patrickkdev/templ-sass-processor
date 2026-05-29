@@ -36,7 +36,7 @@ go install github.com/patrickkdev/templ-sass-processor@latest
 Basic: scan the current directory and replace `<style>` blocks with processed output in-place:
 
 ```bash
-templ-sass-processor --src ./ --inplace
+templ-sass-processor .
 ```
 
 ## Example — before & after
@@ -44,6 +44,7 @@ templ-sass-processor --src ./ --inplace
 **Input (`component.templ`)**
 
 ```html
+...
 <div class="card">
   <h3 class="title">Title</h3>
 </div>
@@ -58,11 +59,13 @@ templ-sass-processor --src ./ --inplace
   }
 }
 </style>
+...
 ```
 
 **Output (inline replacement)**
 
 ```html
+...
 <div class="card">
   <h3 class="title">Title</h3>
 </div>
@@ -72,8 +75,7 @@ templ-sass-processor --src ./ --inplace
 .card .title { font-weight: 700; }
 .card .title:hover { color: #555; }
 </style>
+...
 ```
 
-PRs and issues welcome. Good first contributions:
-
-* Add tests for specific nesting edge cases.
+PRs and issues welcome.
